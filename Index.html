@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 90px;
+    height: 90px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+  </style>
+</head>
+<body><header>
+  <img src="https://via.placeholder.com/150" alt="Profile Photo" />
+  <h1>Your Name</h1>
+  <p>Short Professional Tagline</p>  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Skill 1</li>
+      <li>Skill 2</li>
+      <li>Skill 3</li>
+      <li>Skill 4</li>
+    </ul>
+  </div>
+</section><section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Job Title - Company</h3>
+    <p><em>Duration</em></p>
+    <p>Description of responsibilities and achievements.</p>
+  </div>  <div class="card">
+    <h3>Another Role - Company</h3>
+    <p><em>Duration</em></p>
+    <p>Description of responsibilities and achievements.</p>
+  </div>
+</section><section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Project Title</h3>
+      <p>Short description of the project.</p>
+    </div><div class="card">
+  <h3>Project Title</h3>
+  <p>Short description of the project.</p>
+</div>
+
+  </div>
+</section><section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your@email.com</p>
+    <p>Phone: +1234567890</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </div>
+</section><footer>
+  <p>© 2026 Your Name. All rights reserved.</p>
+</footer></body>
+</html>
